@@ -1,0 +1,5 @@
+; This file is managed by puppet - DO NOT EDIT
+;
+[user]
+  email = <%= user %>@<%= scope.lookupvar('::domain') %>
+  name = <%= name %> (on <%= scope.lookupvar('::fqdn') %>)
